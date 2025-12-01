@@ -47,4 +47,10 @@ function iniciarSlideshow() {
     }, 4000);
 }
 
+document.body.addEventListener("click", () => {
+    const musica = document.getElementById("musica");
+    if (musica.paused) musica.play();
+});
+
+
 carregarSlideshow();
